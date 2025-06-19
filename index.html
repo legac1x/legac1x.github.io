@@ -4,6 +4,47 @@
     <title>Telegram WebApp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://telegram.org/js/telegram-web-app.js?57"></script>
+    <style>
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          background-color: var(--tg-theme-bg-color);
+          color: var(--tg-theme-text-color);
+          margin: 0;
+          padding: 12px;
+        }
+
+        .tg-button {
+          display: inline-block;
+          padding: 10px 16px;
+          background: var(--tg-theme-button-color);
+          color: var(--tg-theme-button-text-color) !important;
+          border-radius: 10px;
+          text-decoration: none;
+          font-weight: 500;
+          text-align: center;
+          border: none;
+          cursor: pointer;
+          transition: background 0.2s;
+        }
+
+        .tg-button:hover {
+          background: var(--tg-theme-link-color);
+        }
+
+        .tg-header {
+          font-size: 20px;
+          font-weight: 700;
+          margin: 0 0 16px 0;
+          color: var(--tg-theme-text-color);
+        }
+
+        .tg-hint {
+          font-size: 14px;
+          color: var(--tg-theme-hint-color);
+          margin: 8px 0;
+        }
+    </style>
 </head>
 <body>
     <div id="name">
