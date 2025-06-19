@@ -4,6 +4,13 @@
     <title>Telegram WebApp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function sendName() {
+            const = name = document.getElementById("name").value;
+            Telegram.WebApp.sendData(name);
+            Telegram.WebApp.close();
+        }
+    </script>
 </head>
 <body>
     <h1>Напиши свое имя</h1>
