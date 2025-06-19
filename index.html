@@ -7,42 +7,48 @@
     <script src="https://telegram.org/js/telegram-web-app.js?57"></script>
     <style>
         body {
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-          background-color: var(--tg-theme-bg-color);
-          color: var(--tg-theme-text-color);
-          margin: 0;
-          padding: 12px;
-        }
-
-        .tg-button {
-          display: inline-block;
-          padding: 10px 16px;
-          background: var(--tg-theme-button-color);
-          color: var(--tg-theme-button-text-color) !important;
-          border-radius: 10px;
-          text-decoration: none;
-          font-weight: 500;
-          text-align: center;
-          border: none;
-          cursor: pointer;
-          transition: background 0.2s;
-        }
-
-        .tg-button:hover {
-          background: var(--tg-theme-link-color);
-        }
-
-        .tg-header {
-          font-size: 20px;
-          font-weight: 700;
-          margin: 0 0 16px 0;
+          font-family: 'Montserrat', sans-serif;
+          background: var(--tg-theme-bg-color);
           color: var(--tg-theme-text-color);
         }
 
-        .tg-hint {
-          font-size: 14px;
-          color: var(--tg-theme-hint-color);
-          margin: 8px 0;
+        #main {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 70px;
+            margin: 30px auto;
+        }
+
+        p {
+            width: 350px;
+            margin: 0 auto;
+        }
+
+        button {
+            border: 0;
+            border-radius: 5px;
+            margin-top: 50px;
+            height: 60px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 500ms ease;
+            color: var(--tg-theme-button-color);
+            background: var(--tg-theme-button-color);
+        }
+
+        button:hover {
+            background: var(--tg-theme-secondary-bg-color);
         }
     </style>
 </head>
@@ -51,7 +57,14 @@
         <h1>Онлайн магазин</h1>
         <img src="https://i.ytimg.com/vi/FsmcWWQvuHk/maxresdefault.jpg">
         <p>Lorem ipsum dolor </p>
+        <button id="buy">Купить</button>
     </div>
-
+    <form id="form">
+        <input type="text" placeholder="Имя" id="user_name">
+        <input type="text" placeholder="email" id="user_email">
+        <input type="text" placeholder="Телефон" id="user_phone">
+        <button id="order">Оформить</button>
+    </form>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </body>
 </html>
