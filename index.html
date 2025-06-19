@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         function sendName() {
-            const = name = document.getElementById("name").value;
+            const name = document.getElementById("name").value;
             Telegram.WebApp.sendData(name);
             Telegram.WebApp.close();
         }
@@ -15,6 +15,6 @@
 <body>
     <h1>Напиши свое имя</h1>
     <input type="text" id="name" placeholder="Имя">
-    <button>Отправить</button>
+    <button onclick="sendName()">Отправить</button>
 </body>
 </html>
